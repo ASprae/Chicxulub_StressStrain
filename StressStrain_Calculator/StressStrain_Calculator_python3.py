@@ -311,7 +311,7 @@ for i in np.arange(0, model.nsteps,1):
         sig_11_tl = ((step.data[1][tl] + step_n.data[1][tl])/2)
         sig_11_tr = ((step.data[1][tr] + step_n.data[1][tr])/2)
         sig_11_bl = ((step.data[1][bl] + step_n.data[1][bl])/2)
-        sig_11_br = ((step.data[1][tr] + step_n.data[1][tr])/2)
+        sig_11_br = ((step.data[1][br] + step_n.data[1][br])/2)
 
         sig_11_av = (sig_11_tl + sig_11_tr + sig_11_bl + sig_11_br) / 4
         sig_11.append(sig_11_av + p_av)
@@ -319,7 +319,7 @@ for i in np.arange(0, model.nsteps,1):
         sig_12_tl = ((step.data[3][tl] + step_n.data[3][tl])/2)
         sig_12_tr = ((step.data[3][tr] + step_n.data[3][tr])/2)
         sig_12_bl = ((step.data[3][bl] + step_n.data[3][bl])/2)
-        sig_12_br = ((step.data[3][tr] + step_n.data[3][tr])/2)
+        sig_12_br = ((step.data[3][br] + step_n.data[3][br])/2)
 
         sig_12_av = (sig_12_tl + sig_12_tr + sig_12_bl + sig_12_br) / 4
         sig_12.append(sig_12_av)
@@ -327,7 +327,7 @@ for i in np.arange(0, model.nsteps,1):
         sig_22_tl = ((step.data[2][tl] + step_n.data[2][tl])/2)
         sig_22_tr = ((step.data[2][tr] + step_n.data[2][tr])/2)
         sig_22_bl = ((step.data[2][bl] + step_n.data[2][bl])/2)
-        sig_22_br = ((step.data[2][tr] + step_n.data[2][tr])/2)
+        sig_22_br = ((step.data[2][br] + step_n.data[2][br])/2)
 
         sig_22_av = (sig_22_tl + sig_22_tr + sig_22_bl + sig_22_br) / 4
         sig_22.append(sig_22_av + p_av)
@@ -335,7 +335,7 @@ for i in np.arange(0, model.nsteps,1):
         sig_33_tl = ((step.data[4][tl] + step_n.data[4][tl])/2)
         sig_33_tr = ((step.data[4][tr] + step_n.data[4][tr])/2)
         sig_33_bl = ((step.data[4][bl] + step_n.data[4][bl])/2)
-        sig_33_br = ((step.data[4][tr] + step_n.data[4][tr])/2)
+        sig_33_br = ((step.data[4][br] + step_n.data[4][br])/2)
 
         sig_33_av =(sig_33_tl + sig_33_tr + sig_33_bl + sig_33_br) / 4
         sig_33.append(sig_33_av + p_av)
